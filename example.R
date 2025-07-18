@@ -3,12 +3,8 @@ source("R/multilateration.R")        # Adjust if function is in a different scri
 source("R/utils.R")                # Source other scripts if needed
 
 # Example input: Simulated positions of reference points and distances from target
-anchors <- data.frame(
-  x = c(0, 0, 10, 10),
-  y = c(0, 10, 0, 10)
-)
 
-# Example data, as matrix
+
 anchors <- data.frame(x = c(0, 0, 10, 10), y = c(0, 10, 0, 10))
 distances <- c(6, 6.151, 8, 8)
 
