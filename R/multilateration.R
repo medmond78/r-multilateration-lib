@@ -11,7 +11,4 @@ multilaterate <- function(distances, coordinates) {
   result <- optim(initial_guess, objective_function)
   return(result$par)
 }
-# Helper function to calculate distances from a point to all reference points
-distance <- function(point, coordinates) {
-  sqrt(rowSums((coordinates - point) ^ 2))
-}
+
